@@ -13,7 +13,7 @@
 // 酒店无法通过本地保存 HTML 来绕过，因为检查指向你的服务器
 // ============================================================
 var HOTEL_TOKEN = '4928d17cbade4020';
-var STATUS_URL = 'https://your-domain.com/hotel-guide/status/' + HOTEL_TOKEN + '/status.json';
+var STATUS_URL = 'https://buchiyu55.github.io/hotel-guide/status/' + HOTEL_TOKEN + '/status.json';
 
 fetch(STATUS_URL)
   .then(function(r) { if (!r.ok) throw new Error('not found'); return r.json(); })
