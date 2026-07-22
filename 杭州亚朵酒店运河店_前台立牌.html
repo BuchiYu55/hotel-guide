@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>杭州亚朵酒店·运河店 · 前台立牌</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Serif+SC:wght@600;700&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  background: #f5f3f0;
+  font-family: 'Inter', -apple-system, sans-serif;
+  color: #1a1a2e;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  flex-direction: column;
+}
+.card {
+  width: 420px;
+  max-width: 100%;
+  min-height: 594px;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 32px 28px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #b91c1c, #dc2626, #b91c1c);
+}
+.badge {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 11px;
+  color: #b91c1c;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+h1 {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 2px;
+}
+h1 small {
+  font-size: 13px;
+  font-weight: 400;
+  color: #6b7280;
+  font-family: 'Inter', sans-serif;
+}
+.subtitle {
+  font-size: 12px;
+  color: #9ca3af;
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e5e7eb;
+}
+.qr-section {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+.qr-box {
+  width: 100px;
+  height: 100px;
+  background: #1a1a2e;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.qr-box img {
+  width: 88px;
+  height: 88px;
+  border-radius: 6px;
+  display: block;
+}
+.qr-box .qr-placeholder {
+  width: 80px;
+  height: 80px;
+  background: #ffffff;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 9px;
+  color: #999;
+  text-align: center;
+  line-height: 1.3;
+}
+.qr-cta { flex: 1; }
+.qr-cta .cta-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 4px;
+}
+.qr-cta .cta-desc {
+  font-size: 12px;
+  color: #6b7280;
+  line-height: 1.5;
+}
+.highlights {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+.hl-item {
+  background: #faf8f6;
+  border-radius: 10px;
+  padding: 12px 8px;
+  text-align: center;
+}
+.hl-item .hl-icon { font-size: 20px; margin-bottom: 2px; }
+.hl-item .hl-num { font-size: 18px; font-weight: 800; color: #b91c1c; }
+.hl-item .hl-label { font-size: 10px; color: #6b7280; }
+.loc-group-title {
+  font-size: 12px;
+  font-weight: 600;
+  color: #1a1a2e;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.loc-group-title .tier {
+  font-size: 10px;
+  font-weight: 400;
+  color: #9ca3af;
+}
+.loc-list { margin-bottom: 14px; }
+.loc-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 0;
+  border-bottom: 1px solid #f3f4f6;
+  font-size: 12px;
+}
+.loc-row:last-child { border-bottom: none; }
+.loc-row .l-name { font-weight: 500; color: #1a1a2e; }
+.loc-row .l-dist { font-size: 11px; color: #9ca3af; }
+.loc-row .l-star { color: #b91c1c; font-size: 11px; }
+.footer-note {
+  margin-top: auto;
+  padding-top: 16px;
+  border-top: 1px solid #e5e7eb;
+  font-size: 11px;
+  color: #9ca3af;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-note .phone { font-weight: 600; color: #b91c1c; }
+@media print {
+  body { background: #fff; padding: 0; }
+  .card { box-shadow: none; border: 1px solid #ddd; border-radius: 0; }
+}
+@media (max-width: 460px) {
+  .card { min-height: auto; padding: 24px 18px; }
+  .highlights { grid-template-columns: repeat(3, 1fr); }
+}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="badge">ATOUR HOTEL</div>
+  <h1>杭州亚朵酒店·运河店 <small>邻客指南</small></h1>
+  <div class="subtitle">扫码获取完整攻略 · 含一键导航</div>
+  <div class="qr-section">
+    <div class="qr-box">
+      <div class="qr-placeholder">
+        替换为真实<br>二维码<br>(扫码访问攻略页)
+      </div>
+    </div>
+    <div class="qr-cta">
+      <div class="cta-title">📱 扫码查看周边</div>
+      <div class="cta-desc">精选推荐点 · 步行/骑车/驾车分层指引 · 一键导航至每个地点</div>
+    </div>
+  </div>
+  <div class="highlights">
+    <div class="hl-item"><div class="hl-icon">🚶</div><div class="hl-num">4</div><div class="hl-label">步行可达</div></div>
+    <div class="hl-item"><div class="hl-icon">🚲</div><div class="hl-num">4</div><div class="hl-label">骑行推荐</div></div>
+    <div class="hl-item"><div class="hl-icon">🚗</div><div class="hl-num">4</div><div class="hl-label">驾车必去</div></div>
+  </div>
+  <div class="loc-group-title">🚶 步行5-10分钟 <span class="tier">· 楼下即达 | ☕ 咖啡馆 | 🍽️ 杭帮菜</span></div>
+<div class="loc-list">    <div class="loc-row"><span class="l-name">运河水街</span><span class="l-dist">步行2分钟</span><span class="l-star">★4.0</span></div>
+    <div class="loc-row"><span class="l-name">CANMORE Café 锴默咖啡</span><span class="l-dist">步行5分钟</span><span class="l-star">☕ 咖啡馆</span></div>
+    <div class="loc-row"><span class="l-name">四合里餐厅</span><span class="l-dist">步行5分钟</span><span class="l-star">🍽️ 杭帮菜</span></div>
+    <div class="loc-row"><span class="l-name">大运河音乐公园</span><span class="l-dist">步行8分钟</span><span class="l-star">免费</span></div>
+</div>
+  <div class="loc-group-title">🚲 骑行8-15分钟 <span class="tier">· ★4.7 | ★4.6 | 🛍️</span></div>
+<div class="loc-list">    <div class="loc-row"><span class="l-name">拱宸桥</span><span class="l-dist">骑行8分钟</span><span class="l-star">★4.7</span></div>
+    <div class="loc-row"><span class="l-name">小河历史文化街区</span><span class="l-dist">骑行10分钟</span><span class="l-star">★4.6</span></div>
+    <div class="loc-row"><span class="l-name">运河天地</span><span class="l-dist">骑行6分钟</span><span class="l-star">🛍️</span></div>
+    <div class="loc-row"><span class="l-name">京杭大运河绿道</span><span class="l-dist">楼下即入口</span><span class="l-star">7km</span></div>
+</div>
+  <div class="loc-group-title">🚗 驾车10-20分钟 <span class="tier">· ★4.5 | ★4.6 | 🔥必去</span></div>
+<div class="loc-list">    <div class="loc-row"><span class="l-name">大兜路历史文化街区</span><span class="l-dist">驾车12分钟</span><span class="l-star">★4.5</span></div>
+    <div class="loc-row"><span class="l-name">香积寺</span><span class="l-dist">驾车15分钟</span><span class="l-star">★4.6</span></div>
+    <div class="loc-row"><span class="l-name">胜利河美食街</span><span class="l-dist">驾车15分钟</span><span class="l-star">★4.3</span></div>
+    <div class="loc-row"><span class="l-name">桥西历史街区</span><span class="l-dist">驾车10分钟</span><span class="l-star">免费</span></div>
+</div>
+  <div class="footer-note">
+    <span>🏷️ 前台可借自行车 · 扫码享完整攻略</span>
+    <span class="phone">📞 0571-XXXX-XXXX</span>
+  </div>
+</div>
+<div style="text-align:center;margin-top:16px;font-size:12px;color:#9ca3af;">
+  💡 打印提示：浏览器打印 → A5纸张 · 建议覆膜作为前台立牌 · 替换二维码后打印
+</div>
+</body>
+</html>
